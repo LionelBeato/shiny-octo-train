@@ -8,6 +8,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 @SpringBootTest(webEnvironment =
 SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -25,6 +26,12 @@ public class MathControllerTest {
         Integer actual = this.restTemplate.getForObject("http://localhost:" + port + "/add/4/3", Integer.class);
         System.out.println(actual);
         assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void otherTest(){
+        fail("not yet implemented");
     }
 
 
