@@ -25,10 +25,18 @@ public class MathControllerTest {
     @Value("${app.monkey}")
     String myPort;
 
+//    @Value("${app.test}")
+//    String myString;
+
     @Test
     public void portTest(){
         System.out.println(myPort);
     }
+
+//    @Test
+//    public void myTest(){
+//        System.out.println(myString);
+//    }
 
     @Test
     public void test() throws Exception {
