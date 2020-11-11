@@ -21,9 +21,11 @@ public class MathControllerTest {
 
     @Test
     public void test() throws Exception {
+
         Integer expected = 7;
         Integer actual = this.restTemplate.getForObject("http://localhost:" + port + "/add/4/3", Integer.class);
         System.out.println(actual);
+        System.out.println("hello!");
         assertEquals(expected, actual);
     }
 
