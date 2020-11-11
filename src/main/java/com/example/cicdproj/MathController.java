@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MathController {
 
-    @Value("${app.hello}")
+    @Value("${APP_APPLES}")
     private String hello;
 
     // endpoint that adds two numbers in path

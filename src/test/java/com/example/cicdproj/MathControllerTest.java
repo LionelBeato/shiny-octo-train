@@ -12,8 +12,8 @@ import org.springframework.test.context.TestPropertySource;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-//@SpringBootTest(webEnvironment =
-//SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment =
+SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class MathControllerTest {
 
     @LocalServerPort
@@ -22,16 +22,16 @@ public class MathControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-//    @Value("${app.monkey}")
-//    String myPort;
+    @Value("${app.monkey}")
+    String myPort;
 
 //    @Value("${app.test}")
 //    String myString;
 //
-//    @Test
-//    public void portTest(){
-//        System.out.println(myPort);
-//    }
+    @Test
+    public void portTest(){
+        System.out.println(myPort);
+    }
 
 //    @Test
 //    public void myTest(){
@@ -50,10 +50,10 @@ public class MathControllerTest {
 //    }
 
 
-//    @Test
-//    public void otherTest(){
-//        assertTrue(true);
-//    }
+    @Test
+    public void otherTest(){
+        assertTrue(true);
+    }
 
 
 }

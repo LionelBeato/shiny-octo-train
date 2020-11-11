@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
-@Configuration
-@PropertySource("/app.properties")
+//@Configuration
+//@PropertySource("/app.properties")
 public class Config {
 
     @Autowired
